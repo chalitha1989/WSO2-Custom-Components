@@ -1,6 +1,6 @@
 Steps
 -------
-1. Open the okta.properties file located at resources directory and provide values for introspectionEndpoint, client_id and client_secret for the APP developed in okta. you can provide 'NA' (client_secret=NA) if the values are not available for the app.
+1.Open the okta.properties file located at resources directory and provide values for introspectionEndpoint, client_id and client_secret for the APP developed in okta. you can provide 'NA' (client_secret=NA) if the values are not available for the app.
 2.Use Maven to build the project,Copy the authorization-1.0.0-SNAPSHOT.jar￼ to <server-home>/repository/components/lib/ folder and restart the server.
 3.Create and publish your API using API publisher UI(Eg: let's assume API name is BlogPost, API version is 1.0.0 and user who published the API is admin)
 4.Then goto following directory
@@ -17,7 +17,6 @@ with
 [2017-02-08 11:51:54,990] INFO - DependencyTracker API : admin--BlogPost:v1.0.0 was updated from the Synapse configuration successfully
 [2017-02-08 11:51:54,990] INFO - APIDeployer API: admin-BlogPost:v1.0.0 has been updated from the file: /home/user/demo/setup/wso2am-2.1.0/repository/deployment/server/synapse-configs/default/api/admin--BlogPost_v1.0.0.xml
 [2017-02-08 11:51:56,990] INFO - API Destroying API: admin--BlogPost:v1.0.0
-
 
 8. Now the API is ready to be invoked with a token returned by OKTA.
 
